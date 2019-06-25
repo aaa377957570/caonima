@@ -1,0 +1,252 @@
+#product-list{
+    margin-top:15px;
+    display:flex;
+    justify-content:space-between;
+/*	border:1px solid green;*/
+}
+#plist{
+/*    width:740px;*/
+	width:960px;
+    min-height:200px;
+}
+
+#plist>p.title{
+    font:24px "simhei";
+    padding-left:20px;
+    height:40px;
+    line-height:40px;
+    color:#212121;
+/*	border:2px solid green;*/
+    background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+#show-list{
+    display:flex;
+    justify-content:row;
+    flex-wrap:wrap;
+    padding-top:20px;
+    background-color:#fff;
+    padding:10px 10px;
+}
+#show-list>li{
+    width:230px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    text-align:center;
+    box-sizing:border-box;
+    padding:0 10px 10px;
+}
+#show-list>li:hover{
+    box-shadow:0 0 5px #ddd;
+}
+#show-list>li img{
+    width:90%;
+	margin:10px 0 10px 0;
+/*	border:1px solid red;*/
+    transition:all 1s;
+}
+#show-list>li img:hover{
+    transform:scale(1.1);
+}
+#show-list>li span.price{
+    display:block;
+    font-weight:normal;
+    color:#FF6700;
+    font-size:21px;
+}
+#show-list>li>p{
+    text-align:left;
+}
+#show-list>li>p>a{
+    font-size:14px;
+    line-height:1.2;
+    color:#808080;
+}
+#show-list>li>p{
+    margin-bottom:15px;
+}
+
+/*,.cart_content>div>div>span*/
+#show-list>li>div>span{
+    display:inline-block;
+    font-size:27px;
+    width:24px;
+    height:24px;
+    line-height:24px;
+    text-align:center;
+    color:#8BE352;
+    cursor:pointer;
+/*    background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);*/
+    border:1px solid #8BE352;
+	border-radius:8px;
+    vertical-align:top;
+}
+
+/*,.cart_content>div>div>span:hover*/
+#show-list>li>div>span:hover{
+    background:#8BE352;
+	color:#fff;
+}
+#show-list>li>div>input{
+    width:25px;
+    height:24px;
+    box-sizing:border-box;
+    border:none;
+    text-align:center;
+    outline:none;
+    margin:0 3px;
+    position:relative;
+    bottom:4px;
+	font:400 18px simhei;
+	color:#0F0F0F;
+}
+#show-list>li>div>a{
+    font:14px "微软雅黑";
+    display:inline-block;
+    width:80px;
+    height:32px;
+    line-height:32px;
+    text-align:center; 
+	background:#8BE352;
+    border-radius:8px;
+    color:#fff;
+    cursor:pointer;
+    position:relative;
+    top:-4px;
+	margin-left:10px;
+}
+#show-list>li>div>a:hover{
+/*    background:#62D31A;*/
+}
+
+
+/*购物车*/
+#cart{
+	margin-top:100px;
+}
+#cart p.title{
+	padding:0 10px;
+	display:flex;
+	justify-content:space-between;
+/*	font-size:21px;*/
+	height:40px;
+	line-height:40px;
+	background:#8BE352;
+}
+
+#cart p.title>span{
+	font-size:21px;
+}
+
+#cart p.title>a{
+	font-size:21px;
+	margin-top:3px;
+}
+
+#cart div.cart-result{
+	/*高度，行高，背景，上边框，左内边距*/
+	width:220px;
+	height:45px;
+	line-height:45px;
+	background:#808080;
+	border-top:1px dashed #d0d0d0;
+	padding-left:10px;
+	/*弹性布局，两端对齐*/
+	display:flex;
+	justify-content:space-between;
+}
+#cart div.cart-result span{
+	font-size:16px;
+	color:#fff;
+}
+#cart div.cart-result a{
+	width:40%;
+	padding-top:8px;
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	background:#FF6700;
+}
+
+#cart div.cart-content{
+	background:#fff;
+}
+
+
+#cart div.item{
+	/*上边框，弹性布局，两端对齐，上下左右内边距*/
+	border-top:1px dashed #d0d0d0;
+	display:flex;
+	justify-content:space-between;
+	padding:10px;
+}
+
+#cart div.item>span{
+	width:65px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+#cart div.item>p{
+	margin-left:8px;
+/*	font-weight:600;*/
+    font-size:14px;
+}
+#cart div.item>div span{
+	/*行内块，宽度，高度，渐变背景，文本颜色，文字大小，水平居中，行高*/
+	display:inline-block;
+	width:16px;
+	height:16px;
+/*	background:linear-gradient(to bottom,#efefef,#e1e1e1);*/
+/*	background:#8BE352;*/
+	color:red;
+	border:1px solid #FF6700;
+	font-size:16px;
+	text-align:center;
+	line-height:16px;
+	
+}
+#cart div.item>div input{
+	/*宽度，高度，取消边框，取消轮廓，文本水平居中对齐*/
+	width:16px;
+	height:16px;
+	font-size:14px;
+	background:#F5F5F5;
+	border:none;
+	outline:none;
+	text-align:center;
+}
+.total_price{
+    line-height:50px;
+    color:#fff;
+    font-size:2em;
+}
+#pages{
+    padding:0px 20px;
+    text-align:right;
+/*    background:linear-gradient(to top , #f5f4f5,#e6e6e5);*/
+/*	border:1px solid red;*/
+    height:40px;
+    line-height:40px;
+}
+#pages a{
+    padding:8px 12px;
+    border:1px solid #FF6700;
+    border-radius:4px;
+/*    color:#0aa1ed;*/
+	color:#FF6700;
+	font-size:14px;
+	margin-left:2px;
+}
+#pages a.current{
+/*    border-color:#0aa1ed;*/
+/*    background:#0aa1ed;*/
+	border-color:#FF6700;
+    background:#FF6700;
+    color:#fff;
+}
+#pages a.disabled{
+    color:#5F5F5F;
+    background:#f2f2f2;
+    border:1px solid #5F5F5F;
+}

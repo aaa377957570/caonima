@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="css/base-hao.css">
+	<link rel="stylesheet" href="css/login-hao.css">
+</head>
+<body>
+	<!--页面顶部-->
+	<div id="top" class="top">
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/register/mistore_logo.png">
+			</a>
+		</div>
+	</div>
+
+
+	<!--页面中部(大图片区)-->
+	<div id="container" class="wrap">
+		<!--登录布局(居中)-->
+		<div class="layout">
+			<!--登录框-->
+			<div id="login-main" class="mainbox">
+				<!--顶部-->
+				<div class="nav_tabs_panel">
+ 					<div id="nav_tabs" class="nav_tabs">
+						<a href="#"  data-tab="pwd">帐号登录</a>
+						<span class="line"></span>
+						<a href="#"  data-tab="qr">扫码登录</a>
+ 					</div>
+				</div>
+
+				<!--账号登录-->
+ 				<div class="login_area">
+					<form id="login-main-form" action="#" method="POST">
+						<!--输入框2个-->
+						<div class="lgn_inputbg">
+							<!--用户名-->
+							<label class="labelbox">
+								<input class="item_account" type="text"  name="username" id="username" placeholder="请输入您的用户名">
+							</label>
+							<span class="useruname"></span>
+							<!--密码-->
+							<label class="labelbox">
+								<input class="item_account" type="password" name="pwd" id="pwd" placeholder="请输入您的密码">
+							</label>
+
+							<label class="labelbox">
+								<input class="item_account" type="text" name="yzm" id="yzm" placeholder="请输入验证码">
+							</label>
+							<span class="yanzhengma">点击换一张</span>
+						</div>
+
+						<!--登录按钮-->
+						<div class="btns_bg">
+ 							<input id="login-button" class="btn_orange" type="button" value="登录">
+						</div>
+
+						<!--其他部分-->
+						<div class="other_panel clear">
+							<!--记住用户名-->
+							<div class="choose lf">
+								<input type="checkbox" class="checkbox" id="ck_rmbUser" value="0" style="vertical-align:middle;">
+								<label for="ck_rmbUser" style="vertical-align:middle;">记住用户名</label>
+							</div>
+							<!--立即注册/忘记密码-->
+ 							<div class="reverse rf">
+								<a class="rf" href="#">忘记密码?</a>
+								<a class="rf" href="register.html">立即注册<span>|</span></a>	
+							</div>
+							<!--其他方式登录-->
+							<div class="other_login_type" >
+								<fieldset class="oth_type_tit">
+									<legend align="center">
+										其他方式登录
+									</legend>
+								</fieldset>
+								<div class="oth_type_links">
+									<a class="icon_type btn_qq" href="#" title="QQ登录" target="_blank" data-type="qq">
+										<i class="icon_default_qq btn_sns_icontype"></i>
+									</a>
+									<a class="icon_type btn_weibo" href="#" title="微博登陆" target="_blank" data-type="weibo">
+										<i class="icon_default_weibo btn_sns_icontype"></i>
+									</a>
+									<a class="icon_type btn_alipay" href="#" title="支付宝登陆" target="_blank" data-type="alipay">
+										<i class="icon_default_alipay btn_sns_icontype"></i>
+									</a>
+									<a class="icon_type btn_weixin" href="#" title="微信登录" target="_blank" data-type="weixin">
+										<i class="icon_default_weixin btn_sns_icontype"></i>
+									</a>
+								</div>
+							</div>
+						</div>		
+					</form>
+				</div>
+				
+				<!--扫码登录-->
+				<div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--页面底部-->
+	<div id="bottom" class="bottom">
+		<ul class="lang-select-list">
+			<li>
+				<a href="#" data-lang="zh_CN" class="lang-select-li current">简体</a>|
+			</li>
+			<li>
+				<a href="#" data-lang="zh_TW" class="lang-select-li current">繁体</a>|
+			</li>
+			<li>
+				<a href="#" data-lang="en" class="lang-select-li current">English</a>|
+			</li>
+			<li>
+				<a href="#" class="current">常见问题</a>
+			</li>
+		</ul>
+		
+		<p class="bottom-intro">
+			xxxx公司版权所有-京ICP备10088888-
+			<a href="#">
+				<img src="img/register/ghs.png">
+				京公网安备11010802020134号
+			</a>
+			-京ICP证110507号
+		</p>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="jquery-3.2.1.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>

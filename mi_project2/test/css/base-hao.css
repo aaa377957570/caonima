@@ -1,0 +1,78 @@
+﻿/*基础样式*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,pre{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+body{
+	font:12px "simhei",Arail;
+	color:#333;
+	background:#fff;
+}
+
+a{
+	color:#757575;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#ff6700;
+}
+
+img{
+	vertical-align:middle;
+}
+
+.lf{
+	float:left;
+}
+
+.rf{
+	float:right;
+}
+
+
+.clear:before{
+	content:"";
+	display:table;
+}
+
+
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.hide{
+	display:none !important;
+}
+
+div.main{
+	margin:0 auto;
+	width:960px;
+}
+
+.container{
+	width: 1226px;  
+	margin:0 auto; 
+	position: relative
+}
+
+*{
+   box-sizing: border-box;
+ }
+
+/*引入网页头部*/
+.my_header{
+	width:100%;
+	height:130px;
+	margin:50px 0 15px 0;
+}
+
+/*引入网页尾部*/
+.my_footer{
+	width:100%;
+	height:500px;
+}

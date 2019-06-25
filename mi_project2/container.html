@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+<div class="container">
+    <!--1:轮播图-->
+    <div class="banner">
+        <!--轮播图-->
+        <ul class="banner-img">
+            <li><a href="#"><img src="img/index/logo1.jpg"></a></li>
+            <li><a href="#"><img src="img/index/logo2.jpg"></a></li>
+            <li><a href="#"><img src="img/index/logo3.jpg"></a></li>
+            <li><a href="#"><img src="img/index/logo4.jpg"></a></li>
+            <li><a href="#"><img src="img/index/logo5.jpg"></a></li>
+        </ul>
+        <!--小圆点-->
+        <ul class="indicators">
+            <li class="actived"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--左右导航键-->
+        <a href="#" class="banner-arrow  arrow-left">
+            <img src="img/index/arrow-left.png"></a>
+        <a href="#"class="banner-arrow arrow-right">
+            <img src="img/index/arrow-right.png" ></a>
+    </div>
+    <!--2:静态广告区域-->
+    <div class="home-static container">
+        <ul class="static-list">
+            <li><a href="#">选购手机</a></li>
+            <li><a href="#">企业团购</a></li>
+            <li><a href="#">F码通道</a></li>
+            <li><a href="#">米粉卡</a></li>
+            <li><a href="#">以旧换新</a></li>
+            <li><a href="#">话费充值</a></li>
+        </ul>
+        <ul class="static-banner">
+            <li class="first"><a href="#"><img src="img/index/banner-item1.jpg"></a></li>
+            <li><a href="#"><img src="img/index/banner-item2.jpg"></a></li>
+            <li><a href="#"><img src="img/index/banner-item3.jpg"></a></li>
+        </ul>
+    </div>
+    <!--3:小米闪购-->
+    <div class="home-star-goods container clear">
+        <!--标题-->
+        <div class="box-hd">
+            <h2 class="title">小米闪购</h2>
+            <div class="more">
+                <a href="#" class="ck-prev">←</a>
+                <a href="#" class="ck-next">→</a>
+            </div>
+        </div>
+        <!--倒计时-->
+        <div class="countdown">
+            <p class="time-title"></p>
+            <img src="img/index/flashpurchase.png">
+            <p class="sub">距离开始还有</p>
+            <div class="time-box">
+                <span class="tbox lf">00</span>
+                <span class="tdosh lf">:</span>
+                <span class="tbox minutes lf">00</span>
+                <span class="tdosh lf">:</span>
+                <span class="tbox seconds lf">00</span>
+            </div>
+        </div>
+        <!--轮播列表-->
+        <div class="box-bd">
+            <ul class="goods-list"></ul>
+        </div>
+    </div>
+</div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/container.js"></script>
+</body>
+</html>

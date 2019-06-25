@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+	<link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<!--注册/登录/信息提示-->
+<div class="header container">
+    <!-- 1 LOGO-->
+    <div class="header-logo lf">
+        <a href="index.html" class="logo">
+            <img src="img/header/mi-logo.png" title="主页">
+        </a>
+    </div>
+    <div class="header-title lf">
+        <h2 class="lf">我的购物车</h2>
+    </div>
+
+    <!-- 2 注册、登录/欢迎、我的订单-->
+    <div class="top-info rt">
+        <div class="log lf" data-toggle="loginList" >
+            <a href="login_01.html"  class="link login" >登录</a>
+            <span class="sep">|</span>
+            <a href="register.html"  target="_blank" class="link register" >注册</a>
+        </div>
+        <div class="user rt "  data-toggle="welcomeList">
+            <a  href="#" class="user-name lf">phone<i class="iconfont"></i></a>
+            <ul class="user-menu">
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">评价喜欢</a></li>
+                <li><a href="#">我的喜欢</a></li>
+                <li><a href="#">小米账户</a></li>
+                <li><a href="javascript:void (0);" class="logout">退出登录</a></li>
+            </ul>
+            <span class="sep lf">|</span>
+            <span class="order lf">
+                <a>我的订单</a>
+            </span>
+        </div>
+    </div>
+</div>
+<!-- 空购物车样式 -->
+
+<div class=" container empty ">
+    <div class="not-login " >
+        <h2>您的购物车还是空的！</h2>
+        <p class="login-desc">登录后将显示您之前加入的商品</p>
+        <a href="login.html" class="login-tip btn">立即登录</a>
+        <a href="productlist.html" class="go-shopping btn">马上去购物</a>
+    </div>
+    <div class="has-login ">
+        <h2>您的购物车还是空的！</h2>
+        <a href="productlist.html" class="go-shopping btn">马上去购物</a>
+    </div>
+</div>
+
+<div class="modal" style="display:none">
+    <div class="modal_dialog">
+        <div class="modal_header">
+            删除提醒
+        </div>
+        <div class="modal_information">
+            <img src="img/model/model_img2.png" alt="" />
+            <span>确定删除您的这个宝贝吗？</span>
+        </div>
+        <div class="yes"><span>删除</span></div>
+        <div class="no"><span>不删除</span></div>
+    </div>
+</div>
+<div class="modalNo" style="display:none">
+    <div class="modal_dialog">
+        <div class="modal_header">
+            删除提示
+            <img src="img/model/model_img1.png" alt="" class="rt close" />
+        </div>
+        <div class="modal_information">
+            <img src="img/model/model_img2.png" alt="" />
+            <span>请选择商品</span>
+        </div>
+    </div>
+</div>
+<div class="big">
+    <form name="" action="" method="post">
+        <section id="section">
+            <div id="title">
+                <b>购物车</b>
+                <p>
+                    已选<span class="total color">0</span>件商品<span class="interval"></span>合计(不含运费):<span class="totalPrices color susum">0.00</span>
+                    <span
+                            class="unit color">元</span>
+                </p>
+            </div>
+            <div id="box">
+                <div id="content_box">
+                    <div class="imfor_top">
+                        <div class="check_top">
+                            <div class="all">
+                                <span class="normal">
+                                <img src="img/cart/product_normal.png" alt=""/>
+                            </span> <input type="hidden" name="" value="">全选
+                            </div>
+                        </div>
+                        <div class="pudc_top">商品</div>
+                        <div class="pices_top">单价(元)</div>
+                        <div class="num_top">数量</div>
+                        <div class="totle_top">金额</div>
+                        <div class="del_top">操作</div>
+                    </div>
+                    <div id="content_box_body">
+                        <div class="loading">
+                            <img src="img/loading.gif" alt="购物车内容加载中...">
+                        </div>
+                    </div>
+                </div>
+                <div class="foot">
+                    <div class="foot_check">
+                        <div class="all">
+                <span class="normal">
+                                <img src="img/cart/product_normal.png" alt=""/>
+                            </span> <input type="hidden" name="" value="">全选
+                        </div>
+                    </div>
+                    <a href="javascript:void (0);" class="foot_del">删除</a>
+                    <!--<a href="javascript:;" class="foot_yr">移入收藏夹</a>-->
+                    <div class="foot_qk">清空失效商品</div>
+                    <div class="foot_cash" id="go-buy">去结算</div>
+                    <div class="foot_tol"><span>合计(不含运费):</span><span class="foot_pices susumOne">0.00</span><span class='foot_des'>元</span></div>
+                    <div class="foot_selected">
+                        已选<span class="totalOne color">0</span>件商品
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</div>
+<div class="onfooter">
+	<div class="container">
+			<div class="footer-service">
+					<ul class="list-service clearfix">
+							<li>
+									<a href="#">
+											<i class="iconfont icon-weixiubanshou"></i>
+											预约维修服务
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<i class="iconfont icon-7tianwuliyoutuihuo"></i>
+											7天无理由退货
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<i class="iconfont icon-15tianwuliyoutuihuo"></i>
+											15天免费换货
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<i class="iconfont icon-lipin"></i>
+											满150元包邮
+									</a>
+							</li>
+							<li>
+									<a href="#">
+											<i class="iconfont icon-dizhi"></i>
+											520余家售后网点
+									</a>
+							</li>
+					</ul>
+			</div>
+			<div class="footer-links clearfix">
+							<dl class="col-links">
+									<dt>帮助中心</dt>
+									<dd><a href="#">账户管理</a></dd>
+									<dd><a href="#">购物指南</a></dd>
+									<dd><a href="#">订单操作</a></dd>
+							</dl>
+							<dl class="col-links">
+									<dt>服务支持</dt>
+									<dd><a href="#">售后政策</a></dd>
+									<dd><a href="#">自助服务</a></dd>
+									<dd><a href="#">相关下载</a></dd>
+							</dl>
+					<dl class="col-links">
+							<dt>线下门店</dt>
+							<dd><a href="#">小米之家</a></dd>
+							<dd><a href="#">服务网点</a></dd>
+							<dd><a href="#">零售网点</a></dd>
+					</dl>
+					<dl class="col-links">
+							<dt>关于小米</dt>
+							<dd><a href="#">了解小米</a></dd>
+							<dd><a href="#">加入小米</a></dd>
+							<dd><a href="#">联系我们</a></dd>
+					</dl>
+					<dl class="col-links">
+							<dt>关注我们</dt>
+							<dd><a href="#">新浪微博</a></dd>
+							<dd><a href="#">小米部落</a></dd>
+							<dd><a href="#">官方微信</a></dd>
+					</dl>
+					<dl class="col-links">
+							<dt>特色服务</dt>
+							<dd><a href="#">F码通道</a></dd>
+							<dd><a href="#">礼物码</a></dd>
+							<dd><a href="#">防伪查询</a></dd>
+					</dl>
+					<div class="col-contact">
+							<p class="phone">400-100-5678</p>
+							<p>周一至周日 8:00-18:00 <br>(仅收市话费)</p>
+							<a href="#" class="btn"><i class="iconfont"></i>24小时在线客服</a>
+					</div>
+			</div>
+	</div>
+	<!--版权声明-->
+	<div class="footer-info">
+			<div class="container">
+					<div class="logo ir lf"></div>
+					<div class="info-text lf">
+							<p class="sites">
+									<a href="#">小米商城</a>
+									<span>|</span>
+									<a href="#">MIUI</a>
+									<span>|</span>
+									<a href="#">米家</a>
+									<span>|</span>
+									<a href="#">米聊</a>
+									<span>|</span>
+									<a href="#">多看</a>
+									<span>|</span>
+									<a href="#">路由器</a>
+									<span>|</span>
+									<a href="#">米粉卡</a>
+									<span>|</span>
+									<a href="#">小米天猫店</a>
+									<span>|</span>
+									<a href="#">隐私政策</a>
+									<span>|</span>
+									<a href="#">小米京东店</a>
+									<span>|</span>
+									<a href="#">Select Region</a>
+									<span>|</span>
+							</p>
+							<p class="copy">
+									<a href="#">mi.com</a>
+									<a href="#">京ICP证110507号</a>
+									<a href="#">京ICP备10046444号</a>
+									<a href="#">京公网安备11010802020134号</a>
+									<a href="#">京网文[2014]0059-0009号</a>
+									<br>
+									违法和不良信息举报电话185-0130-1238，本网站所列数据，出特殊说明外，所有数据均出自我司实验室测试
+							</p>
+					</div>
+					<div class="info-links rf">
+							<a href="#"><img src="img/footer/truste.png"></a>
+							<a href="#"><img src="img/footer/v-logo-0.png"></a>
+							<a href="#"><img src="img/footer/v-logo-1.png"></a>
+							<a href="#"><img src="img/footer/v-logo-2.png"></a>
+							<a href="#"><img src="img/footer/v-logo-3.png"></a>
+					</div>
+			</div>
+			<div class="slogan ir">搜索黑科技，小米为发烧而生</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div class="footer"></div>
+<script src="js/jquery-3.2.1.js" ></script>
+<script src="js/footer.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

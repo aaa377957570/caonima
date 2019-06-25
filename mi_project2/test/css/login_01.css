@@ -1,0 +1,304 @@
+.top .logo{
+	margin:0 auto;
+	width:1130px;
+	box-sizing:border-box;
+}
+
+.wrap{
+	position:relative;
+	width:1440px;
+	height:588px;
+	margin:0 auto;
+	background:url("../img/register/bg.jpg") no-repeat -585px 0;
+}
+
+.wrap>.layout{
+	width:1130px;
+	height:588px;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+
+.layout>.mainbox{
+	position:absolute;
+	width:410px;
+	height:535px;
+	font-size:14px;
+	top:6%;
+	right:11%;
+	background:#FFFFFF;
+}
+
+.layout>.mainbox>.nav_tabs_panel{
+	height:87px;
+}
+
+.layout>.mainbox>.nav_tabs_panel>.nav_tabs{
+	margin:31px 26px 31px;
+	text-align:center;
+	font-size:24px;
+	line-height:24px;
+	color:#009688;
+}
+.layout>.mainbox>.nav_tabs_panel>.nav_tabs a:frist-child{
+	color:#ff6700;	
+}
+.layout>.mainbox>.nav_tabs_panel>.nav_tabs>.line{
+	height:24px;
+	margin: 0 35px 0 42px;
+	border: 1px solid #E0E0E0;
+}
+
+.layout>.mainbox>.login_area{
+	width:350px;
+	margin:0 auto;
+}
+
+.layout>.mainbox>.login_area>form>.lgn_inputbg{
+	margin-top:-35px;
+}
+
+.layout>.mainbox>.login_area>form>.lgn_inputbg>.labelbox{
+	margin-bottom:15px;
+	min-height:50px;
+	display:block;
+	border: 1px solid #E0E0E0;
+}
+.layout>.mainbox>.login_area>form>.lgn_inputbg>.yzm{
+	margin-top:10px;
+}
+.layout>.mainbox>.login_area>form>.lgn_inputbg>.labelbox>.item_account{
+	font-size:15px;
+	width:300px;
+	outline:0;
+	border:0;
+	margin:15px 20px 15px 20px;
+}
+.layout>.mainbox>.login_area>form>.lgn_inputbg>.labelbox>.item_account:focus{
+}
+.layout>.mainbox>.login_area>form>.btns_bg{
+	margin-top:15px;
+}
+
+.layout>.mainbox>.login_area>form>.btns_bg>.btn_orange{
+	width:100%;
+	min-height:50px;
+	background:#f56600;
+	font-size: 16px;
+	color:#fff;
+	border:0;
+	outline:0;
+	cursor:pointer;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel{
+	position:absolute;
+	margin-top:10px;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.choose{
+	color:#757575;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.reverse{
+	margin-top:2px; 
+	padding-left:115px;
+}
+
+/*验证码*/
+/*canvas{*/
+	/*background:#ddd;*/
+	/*position:absolute;*/
+	/*margin:200px auto 0;*/
+	/*top:15px;*/
+	/*left:80px;*/
+/*}*/
+.lgn_inputbg>span{
+	position:absolute;	
+	/* width:100px; */
+	height:50px;
+	line-height:50px;		
+}
+.yanzhengma{
+	background:#fff;
+	font-size:16px;
+	background:#fff;
+	top:220px;
+	left:230px;
+	cursor:pointer;
+	text-decoration:underline;
+	color:#ff6700;
+}
+.lgn_inputbg>.user-regs{
+	position: absolute;
+	font-size:14px;
+	color:red;
+	/* width:450px; */
+	/* height:50px; */
+	/* padding: 0 5px; */
+	/* line-height:50px; */
+	/* z-index:-1; */
+}
+.useruname{
+	top:90px;
+	left:200px;
+		/* z-index:10; */
+}
+.userupwd{
+	top:160px;
+	left:200px;
+}
+.useryzm{
+	top:290px;
+	left:170px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~二维码~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.tabs-con .tab_qrcon {
+	position:absolute;
+    text-align: center;
+	width:400px;
+	height:400px;
+	top:300px;
+	/*display:none;*/
+}
+.tabs-con .tab_qrcon .custom_sub_txt{
+	padding-top:50px;
+}
+.tabs-con .tab_qrcon .qr-box .qr-tip-con{
+		position:absolute;
+		top:-80px;
+		left:160px;
+		z-index:1;
+}
+.tabs-con .tab_qrcon .qr-box .qr-tip-con .qr-tip{
+	color: #FFF;
+    font-size: 18px;
+}
+.tabs-con .tab_qrcon .qr-box .qr-tip-con .qr-retry{
+	width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    font-size: 14px;
+    background: #ff7e00;
+	cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 6px;
+}
+.tabs-con .tab_qrcon .qr-box .qr-img-con{
+	position:absolute;
+	top:-150px;
+	left:120px;
+	border: 1px solid #c2ddb6;
+    background:#000;
+    opacity: 0.7;
+
+}
+.now{
+	color:#ff6700 !important;
+}
+.hide {
+    display: none !important;
+}
+
+/***********************************************测试部分*****************************************************/
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type{
+	padding-left:30px;
+	margin-top:50px;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_tit{
+	border:0;
+	border-top: 1px solid #BBBBBB;
+	color:#BBBBBB;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links{
+	width: 100%;
+    height: 50px;
+	text-align:center;
+	box-sizing:border-box;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.icon_type{
+	display:inline-block;
+	width: 30px;
+    height: 30px;
+    margin:0 15px;
+	border-radius:50%;
+	background-color:#bbb;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.icon_type>.btn_sns_icontype{
+	 
+    background:url("../img/register/icons_type.png"); 
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+	display: block;
+    margin: 4px auto 0;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.icon_type>.icon_default_qq{
+	 background-position: -19px 0;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.btn_qq:hover{
+    background-color:#0288d1;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.icon_type>.icon_default_weibo{
+	background-position: -38px 0;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.btn_weibo:hover{
+    background-color:#d32f2f;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.icon_type>.icon_default_alipay{
+	
+	background-position: -57px 0;
+    width: 25px;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.btn_alipay:hover{
+    background-color:#0ae;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.icon_type>.icon_default_weixin{
+	
+	background-position: -84px 0;
+    width: 23px;
+}
+
+.layout>.mainbox>.login_area>form>.other_panel>.other_login_type>.oth_type_links>.btn_weixin:hover{
+   background-color:#00d20d;
+}
+/****************************************************************************************************/
+
+
+
+.bottom{
+    margin-top: 100px;
+	height: 80px;
+    text-align: center;
+}
+
+.bottom>.lang-select-list{
+	display:flex;
+	justify-content:center;
+}
+
+.bottom>.lang-select-list>li>a{
+	display: inline-block;
+    padding:10px;
+    color: #333333;
+	font-size:14px;
+}
+
+.bottom>.bottom-intro{
+	font-size:14px;
+	margin-top:10px;
+}

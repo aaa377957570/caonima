@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+
+// select * from (select  * from xz_shoppingcart_item a  inner JOIN  xz_laptop b  on   a.product_id=b.lid
+//   inner JOIN   xz_laptop_pic d on   d.laptop_id= b.lid) d where user_id=91  and laptop_id=lid
+
+
+// select * from (select  * from xz_shoppingcart_item a  inner JOIN  xz_laptop b  on   a.product_id=b.lid  
+// inner JOIN   xz_laptop_pic d on   d.laptop_id= b.lid)e where user_id=91  and  sm=(select sm  from e  laptop_id=lid )    
+
+
+// SELECT * FROM `mi_product_overview` a inner join mi_product_pic b on a.p_f_id = b.i_f_id order by a.p_name desc
+
+// SELECT b.*,a.sm,md from mi_product_pic as a,mi_product_overview as b WHERE a.i_f_id = b.p_f_id  order by b.p_name DESC
+
+// select *,(select md from mi_product_pic where i_f_id = p_f_id limit 1) as md from mi_product_overview where p_name LIKE '%小米%' LIMIT 0,5
+</script>  
+</body>
+</html>

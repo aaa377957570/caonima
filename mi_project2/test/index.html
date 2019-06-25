@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+	<link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/container.css">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<!-- <link rel="stylesheet" href="css/footer.css"> -->
+		<script src="js/jquery-1.11.3.js"></script>
+			<script src="js/jquery-3.2.1.js"></script>
+  <title>Document</title>
+ </head>
+ <body>
+  	<header class="header">
+    </header>
+	<div class="indexcontainer">
+		<!--1:轮播图-->
+		<div class="banner">
+			<!--轮播图-->
+			<ul class="banner-img">
+				<li><a href="#"><img src="img/index/logo1.jpg"></a></li>
+				<li><a href="#"><img src="img/index/logo2.jpg"></a></li>
+				<li><a href="#"><img src="img/index/logo3.jpg"></a></li>
+				<li><a href="#"><img src="img/index/logo4.jpg"></a></li>
+				<li><a href="#"><img src="img/index/logo5.jpg"></a></li>
+			</ul>
+			<!--小圆点-->
+			<ul class="indicators">
+				<li class="actived"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<!--左右导航键-->
+			<a href="#" class="banner-arrow  arrow-left">
+				<img src="img/index/arrow-left.png"></a>
+			<a href="#"class="banner-arrow arrow-right">
+				<img src="img/index/arrow-right.png" ></a>
+		</div>
+		<!--2:静态广告区域-->
+		<div class="home-static container">
+			<ul class="static-list">
+				<li><a href="#">选购手机</a></li>
+				<li><a href="#">企业团购</a></li>
+				<li><a href="#">F码通道</a></li>
+				<li><a href="#">米粉卡</a></li>
+				<li><a href="#">以旧换新</a></li>
+				<li><a href="#">话费充值</a></li>
+			</ul>
+			<ul class="static-banner">
+				<li class="first"><a href="#"><img src="img/index/banner-item1.jpg"></a></li>
+				<li><a href="#"><img src="img/index/banner-item2.jpg"></a></li>
+				<li><a href="#"><img src="img/index/banner-item3.jpg"></a></li>
+			</ul>
+		</div>
+		<!--3:小米闪购-->
+		<div class="home-star-goods container clear">
+			<!--标题-->
+			<div class="box-hd">
+				<h2 class="title">小米闪购</h2>
+				<div class="more">
+					<a href="#" class="ck-prev">←</a>
+					<a href="#" class="ck-next">→</a>
+				</div>
+			</div>
+			<!--倒计时-->
+			<div class="countdown">
+				<p class="time-title"></p>
+				<img src="img/index/flashpurchase.png">
+				<p class="sub">距离开始还有</p>
+				<div class="time-box">
+					<span class="tbox lf">00</span>
+					<span class="tdosh lf">:</span>
+					<span class="tbox minutes lf">00</span>
+					<span class="tdosh lf">:</span>
+					<span class="tbox seconds lf">00</span>
+				</div>
+			</div>
+			<!--轮播列表-->
+			<div class="box-bd">
+				<ul class="goods-list"></ul>
+			</div>
+		</div>
+	</div>
+	<!--楼层  -->
+	<floor class="floor">
+	</floor>
+	<!--侧边导航条-->
+	<div id="lift">
+		<ul class="lift_list">
+				<li class="lift_item lift_item_on">
+						<a href="#homeelec_1" class="lift_btn">
+								<span class="LIFT_BTN_TXT">家电</span>
+						</a>
+				</li>
+				<li class="lift_item">
+						<a href="#homeelec_2" class="lift_btn">
+								<span class="lift_btn_txt">智能</span>
+						</a>
+				</li>
+				<li class="lift_item">
+						<a href="#homeelec_3" class="lift_btn">
+								<span class="lift_btn_txt">搭配</span>
+						</a>
+				</li>
+				<li class="lift_item">
+						<a href="#homeelec_4" class="lift_btn">
+								<span class="lift_btn_txt">配件</span>
+						</a>
+				</li>
+				<li class="lift_item">
+						<a href="javascript:;" class="lift_btn">
+								<span class="lift_btn_txt">周边</span>
+						</a>
+				</li>
+				<!--  -->
+		</ul>
+		<div>
+				<a href="#" class="back">
+						<p>
+								返回顶部
+						</p>
+				</a>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<footer class="footer"><footer>
+
+	<script src="js/ajax.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/index-floor.js"></script>
+	<script src="js/container.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/floor.js"></script>
+	<script src="js/index.js"></script>
+	<!-- <script>
+	//登录状态切换
+
+	$(function(){
+		setTimeout(()=>{
+			var uname = sessionStorage.getItem("uname");
+			// console.log("u"+uname);
+			if(uname){
+				$("#welcomeList").show();
+				$("#welcomeList").children(".user-name").html("欢迎:"+uname+"!");
+			}
+		},100)
+		//退出登录操作
+
+		$(".user-menu li .logout").off().click(function(){
+			$("#welcomeList").hide();
+			alert("退出登录成功！");
+			sessionStorage.removeItem("uname");
+		})
+	})
+
+
+	</script>	 -->
+ </body>
+</html>

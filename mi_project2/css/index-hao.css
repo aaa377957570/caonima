@@ -1,0 +1,159 @@
+.home-star-goods{
+	margin-bottom:40px;
+	/* border:3px solid blue; */
+}
+
+/* 小米闪购标题 */
+.home-star-goods>.box-hd{
+	height:58px;
+	position:relative;
+	/* border:3px solid red; */
+}
+
+.home-star-goods>.box-hd>.title{
+	display:inline-block;
+	font-size:22px;
+	font-weight:400;
+	line-height:58px;
+	color: #333;
+}
+
+.home-star-goods>.box-hd>.more{
+	position:absolute;
+	right:0;
+	bottom:10px;
+}
+
+.home-star-goods>.box-hd>.more>a{
+	display:inline-block;
+	width:34px;
+	height:24px;
+	color:#B0B0B0;
+	text-align:center;
+	font-size:14px;
+	line-height:20px;
+	font-weight:bold;
+	border:1px solid #e0e0e0;
+}
+
+.home-star-goods>.box-hd>.more>a:hover{
+	color:#ff6700;
+}
+
+/* 定时器 */
+.home-star-goods>.countdown{
+	float:left;
+	width:234px;
+	height:340px;
+	margin-right:14px;
+	background:#f1eded;
+	/* border:1px solid yellow; */
+}
+
+.home-star-goods>.countdown>.time-title{
+	width:90px;
+	margin:60px auto 20px;
+	color:#ef3a3b;
+	font-size:21px;
+	text-align:center;
+}
+
+.home-star-goods>.countdown img{
+	display:block;
+	margin:0 auto 20px;;
+}
+
+.home-star-goods>.countdown>.sub{
+	text-align:center;
+	font-size:15px;
+	color:rgba(0,0,0,.5);
+}
+
+.home-star-goods>.countdown>.time-box{
+	width:168px;
+	margin:28px auto 0;
+	text-align:center;
+}
+
+.home-star-goods>.countdown>.time-box>.tbox{
+	font-size:24px;
+	width:46px;
+	height:46px;
+	background:#605751;
+	color:#fff;
+	line-height:46px;
+}
+
+.home-star-goods>.countdown>.time-box>.tdosh{
+	width:15px;
+	height:46px;
+	color: #605751;
+	font-size:28px;
+}
+
+/* 单品轮播 */
+.home-star-goods .box-bd{
+	overflow:hidden;
+	width:978px;
+	height:340px;
+	/* border:1px solid red; */
+	position:relative;
+}
+
+.home-star-goods .box-bd .goods-list{
+	height:340px;
+	position:absolute;
+	left:0;
+}
+
+.home-star-goods .box-bd .goods-list li{
+	float:left;
+	height:340px;
+	width:234px;
+	margin-right:14px;
+	text-align:center;
+	background:#fafafa;
+	/* border:1px solid green; */
+}
+
+.home-star-goods .box-bd .goods-list .thumb{
+	display:block;
+	width:160px;
+	margin:0 auto 22px;
+}
+
+.home-star-goods .box-bd .goods-list .thumb img{
+	width:160px;
+	height:160px;
+	margin-top:20px;
+}
+
+.home-star-goods .box-bd .goods-list .title{
+	font-size:16px;
+	font-weight:400;
+	margin-bottom:15px;
+}
+
+.home-star-goods .box-bd .goods-list .desc{
+	height:18px;
+	font-size:12px;
+	color:#b0b0b0;
+	margin-bottom:15px;
+	font-size:14px;
+}
+
+.home-star-goods .box-bd .goods-list .price{
+	color:#ff6709;
+	font-size:14px;
+}
+
+.goods-list .good-item-1{border-top:1px solid #ffac13;}
+.goods-list .good-item-2{border-top:1px solid #83c44e;}
+.goods-list .good-item-3{border-top:1px solid #2196f3;}
+.goods-list .good-item-4{border-top:1px solid #e53935;}
+.goods-list .good-item-5{border-top:1px solid #00c0a5;}
+.goods-list .good-item-6{border-top:1px solid #ffac13;}
+.goods-list .good-item-7{border-top:1px solid #83c44e;}
+.goods-list .good-item-8{border-top:1px solid #2196f3;}
+.goods-list .good-item-9{border-top:1px solid #e53935;}
+.goods-list .good-item-10{border-top:1px solid #00c0a5;}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="">
+	<form class="layout">
+		<!--logo-->
+		<a class="milogo" href="#"></a>
+		<!--标题-->
+		<h4 class="bigtitle">欢迎注册小米</h4>
+		<!--注册框-->
+		<div class="account">
+			<div class="regbox">
+				<!--手机号-->
+				<p class="seltitle">国家/地区</p>
+				<select class="country-list">
+					<option value="1">中国</option>
+					<option value="2">中国台湾</option>
+					<option value="3">中国香港</option>
+					<option value="4">Brazil</option>
+					<option value="5">India</option>
+					<option value="6">Indonsesia</option>
+					<option value="7">Malaysia</option>
+				</select>
+				<p class="tip">成功注册账号后，国家地区将不能被修改</p>
+				<p class="seltitle">手机号码</p>
+				<div class="phone">
+					<span class="zone-numder">+86</span>
+					<img src="img/register/header_normal.png">
+					<input type="text" name="uname" id="uname" class="phone-numder">
+					<span class="tip1"></span>
+				</div>
+				<ul class="zone-list" style="height: 0px;border-top:none;">
+					<li>
+						<span class="lf">中国</span>
+						<span class="rt">+86</span>
+					</li>
+					<li>
+						<span class="lf">中国台湾</span>
+						<span class="rt">+886</span>
+					</li>
+					<li>
+						<span class="lf">中国香港</span><span class="rt">+852</span>
+					</li>
+					<li>
+						<span class="lf">Brazil</span><span class="rt">+55</span>
+					</li>
+					<li>
+						<span class="lf">Indai</span><span class="rt">+91</span>
+					</li>
+					<li>
+						<span class="lf">Indonesia</span><span class="rt">+62</span>
+					</li>
+					<li>
+						<span class="lf">Malaysia</span><span class="rt">+60</span>
+					</li>
+				</ul>
+			</div>
+			<button class="btn-login" id="btnLogin">立即注册</button>
+			<div class="confirm">
+				<input type="checkbox" class="checkbox">
+				<p>"注册账号即表示您同意并愿意遵守小米"
+					<span>用户协议</span>
+					"和"
+					<span>隐私政策</span>
+				</p>
+			</div>
+		</div>
+		<div class="set-upwd">
+			<p class="text">
+				"我们已经发送一条验证短信至"
+				<span class="reg-name">+86 13279368215</span>
+			</p>
+			<p class="msg">请输入短信中的验证码</p>
+			<input type="text" name="upwd" class="upwd" id="button">
+			<button class="new-msg">重新发送</button>
+			<!--重新设置密码，<清空input框-->
+			<br>
+			<span class="userpwd1"></span>
+			<button class="btn-login" id="btn-login1">下一步</button>
+			<input type="text" value="返回" class="back">
+		</div>
+	</form>
+	</div>
+</div>
+
+<!--页面底部-->
+<div id="bottom" class="bottom">
+    <ul class="lang-select-list">
+        <li>
+            <a href="#" data-lang="zh_CN" class="lang-select-li current">简体</a>|
+        </li>
+        <li>
+            <a href="#" data-lang="zh_TW" class="lang-select-li current">繁体</a>|
+        </li>
+        <li>
+            <a href="#" data-lang="en" class="lang-select-li current">English</a>|
+        </li>
+        <li>
+            <a href="#" class="current">常见问题</a>
+        </li>
+    </ul>
+
+    <p class="bottom-intro">
+        xxxx公司版权所有-京ICP备10088888-
+        <a href="#">
+            <img src="img/register/ghs.png">
+            京公网安备11010802020134号
+        </a>
+        -京ICP证110507号
+    </p>
+</div>
+ <script src="js/ajax.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
